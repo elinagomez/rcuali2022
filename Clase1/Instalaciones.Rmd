@@ -46,7 +46,10 @@ remotes::install_github("Nicolas-Schmidt/puy")
 
 ##1) Instalar RTools 4.0: https://cran.r-project.org/bin/windows/Rtools/rtools40.html
 ##2)Instalación desde repositorio Microsoft
-install.packages("https://cran.microsoft.com/snapshot/2021-12-15/bin/windows/contrib/4.1/RGtk2_2.20.36.2.zip", repos=NULL)
+
+url="https://cran.microsoft.com/snapshot/2021-12-15/bin/windows/contrib/4.1/RGtk2_2.20.36.2.zip"
+install.packages(url, repos=NULL)
+
 library(RGtk2)
 ##OK + Instalar, luego reiniciar R.
 
