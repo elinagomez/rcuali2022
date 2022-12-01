@@ -70,6 +70,20 @@ exportCodedFile("Clase4/Material/archivos.html", fid = 1)
 exportCodings("Clase4/Material/codigos2.html")
 
 
+##extraer citas tabuladas 
+
+tabla=RQDA::getCodingTable()
+
+out = vector("list", length = max(tabla$cid))
+
+
+for(i in 1:max(tabla$cid)) {         
+  out[[i]] <- rbind(RQDA::getCodingsByOne(i) )
+  
+}
+
+data = do.call(rbind, out)
+
 
 
 devtools::install_github("stats4sd/RQDAPlus", upgrade = "always")
