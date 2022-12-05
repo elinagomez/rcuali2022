@@ -31,3 +31,6 @@ library(rtweet)
 
 
 
+##portable RQDA
+
+#https://drive.google.com/drive/folders/1VzSwTR3Gd4h7ulWIkRW-84-53_35Ek-g

@@ -1,6 +1,4 @@
 
-
-
 ##Clase 5
 
 
@@ -33,6 +31,16 @@ dfm_intervenciones <- quanteda::dfm(quanteda::tokens(intervenciones$speech,
 
 
 dim(dfm_intervenciones)
+
+
+###si quisieramos considerar términos multi palabra, con  tokens_compound y phrase
+
+# tokens_compound(toks, list(c("United", "Kingdom"), c("European", "Union")))
+# 
+# tokens_compound(toks, phrase(c("United Kingdom", "European Union")))
+
+
+
 
 
 #Nubes de palabras con quanteda
