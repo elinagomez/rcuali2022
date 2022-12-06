@@ -27,10 +27,12 @@ dfm_intervenciones <- quanteda::dfm(quanteda::tokens(intervenciones$speech,
                                     tolower=TRUE,
                                     verbose = FALSE) %>%
   quanteda::dfm_remove(pattern = c(quanteda::stopwords("spanish"),tolower(intervenciones$legislator)),min_nchar=3)%>%
+  quanteda::dfm_trim(min_termfreq = 6)%>% 
   quanteda::dfm_group(groups = intervenciones$party)
 
 
-dim(dfm_intervenciones)
+dim(dfm_intervenciones) ##veo dimensiones
+topfeatures(dfm_intervenciones,20) ##veo principales palabras
 
 
 ###si quisieramos considerar términos multi palabra, con  tokens_compound y phrase

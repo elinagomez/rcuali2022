@@ -52,8 +52,8 @@ Este trabajo se distribuye con una licencia Creative Commons Attribution-ShareAl
 
 - Presentación del paquete **quanteda** para el análisis de textos. 
 - Nubes de palabras
-- Agrupación y dendogramas
 - Asociaciones
+- Redes
 
 
 # Paquete quanteda
@@ -101,6 +101,7 @@ tolower=TRUE, #paso a minúsculas
 verbose = FALSE) %>% 
   quanteda::dfm_remove(pattern = c(quanteda::stopwords("spanish"),tolower(intervenciones$legislator)),
   min_nchar=3)%>% ##saco palabras específicas
+   quanteda::dfm_trim(min_termfreq = 6)%>% 
   quanteda::dfm_group(groups = intervenciones$party) #defino grupos
 ```
 
@@ -122,6 +123,7 @@ dfm_intervenciones <- quanteda::dfm(quanteda::tokens(intervenciones$speech,
                                     tolower=TRUE,
                                     verbose = FALSE) %>%
   quanteda::dfm_remove(pattern = c("señor","señora","presidente","presidenta",quanteda::stopwords("spanish"),tolower(intervenciones$legislator)),min_nchar=3)%>%
+  quanteda::dfm_trim(min_termfreq = 6)%>% 
   quanteda::dfm_group(groups = intervenciones$party)
 
 ```
