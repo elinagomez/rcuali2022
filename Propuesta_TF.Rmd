@@ -1,0 +1,38 @@
+---
+title: "Propuesta Trabajo Final"
+author: "Curso R aplicado al análisis cualitativo (EP/FCS)"
+date: "12/2022"
+output: pdf_document
+---
+
+
+**Características generales:** Trabajo individual para aprobación del curso _R aplicado al análisis cualitativo_ - Educación Permanente (Facultad de Ciencias Sociales - UdelaR). 
+
+**Plazo de entrega:** 17/02/2023 a las 23:59 horas
+
+**Formato:** Subir a la plataforma EVA (FCS) o por correo electrónico (elina.gomez@cienciassociales.edu.uy) un archivo .Rmd y .pdf correspondiente a su compilación o .doc y .pdf, así como archivos y/o base de datos si son de libre acceso (o una muestra de las mismas) que permita la reproducción del documento.
+
+**Consigna general:**
+
+- Elegir una fuente de datos de las vistas en el curso (archivos de texto brutos, OCR, web scraping, scrapeo parlamentario o de prensa digital, APIs de Google o Twitter) e incluir el proceso de extracción o reconstrucción de la información. 
+
+- Crear un corpus de datos textuales tabulados, realizar el pre-procesamiento utilizando alguna/s de las herramientas vistas en el curso (manipulación de strings, limpieza o pre/codificación manual)
+
+- Incluir al menos tres técnicas de minería de texto vistas en el curso (frecuencia de ocurrencia, asociación de palabras, diccionarios, análisis de sentimiento)
+
+- Ilustrar el documento con al menos dos visualizaciones que surjan del procesamiento del texto precedente y den cuenta de los resultados del mismo.
+
+
+*Se valorará:*
+
+- Propuesta de fuentes de datos novedosa
+- Originalidad en las técnicas de procesamiento
+- Resultados relevantes 
+
+
+**Consultas:** elina.gomez@cienciassociales.edu.uy 
+
+
+
+
+
